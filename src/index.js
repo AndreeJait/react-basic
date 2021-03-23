@@ -5,20 +5,29 @@ import reportWebVitals from './reportWebVitals';
 import Form from "./container/Form.jsx";
 import Dashboard from './container/Dashboard.jsx';
 import Navbar from './container/Navbar';
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import PageNotFound from './components/PageNotFound';
-ReactDOM.render(
-  <React.StrictMode >
-    <BrowserRouter>
-     <Navbar/>
-      <Switch>
-        <Route path="/" exact component={Dashboard}/>
-        <Route path="/addpeople" exact component={Form}/>
-        <Route component={PageNotFound}/>
-      </Switch>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+ReactDOM.render( <
+    React.StrictMode >
+    <
+    BrowserRouter >
+    <
+    Navbar / >
+    <
+    Switch >
+    <
+    Route path = "/"
+    exact component = { Dashboard }
+    /> <
+    Route path = "/addpeople"
+    exact component = { Form }
+    /> <
+    Route component = { PageNotFound }
+    /> <
+    /Switch> <
+    /BrowserRouter> <
+    /React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
